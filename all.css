@@ -167,7 +167,7 @@ img{
 }
 .link-box ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .link-three{
     color: #000000;
@@ -218,6 +218,28 @@ img{
     list-style-type: disc;
 }
 /* 頁尾 */
+.contact{
+    display:flex;
+    justify-content: space-between;
+    background-color: #FBFBFB;
+    padding: 80px 40px;
+    margin:auto;
+}
+.contact-info{
+    display: inline-block;
+    text-align:left;
+    margin-right: 24px;
+}
+.contact-info a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
+}
+.contact-icon ul{
+    display: flex;
+    justify-content: evenly;
+}
 .footer{
     background-color: #FFFFFF;
     padding:24px 0;
@@ -229,3 +251,29 @@ img{
     font-weight: 500;
     line-height: 1.5;
 }
+
+/* RWD */
+
+@media (max-width:642px) {
+    .banner{
+        flex-direction: column;
+        height: auto;
+    }
+    .contact{
+        display: none;
+    }
+    .banner-photo{
+        width:100%;
+        height:calc(100vh - 90px);
+    }
+    .banner-text{
+        width:100%;
+        padding: 12px;
+    }
+    .container{
+        width:100%;
+        margin-top:64px;
+        margin-bottom: 64px;
+        padding:0 12px;
+    }
+  }
